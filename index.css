@@ -1,0 +1,49 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+.contanier{
+	width: 800px;
+	height: 320px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left:-400px; 
+	margin-top: -160px;
+}
+.btn{
+	z-index: 10;
+	/*background-color: red;*/
+	line-height: 320px;
+	cursor: pointer;
+	opacity: 0.8;
+}
+.prev-btn{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.next-btn{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.img-list{
+	width: 800px;
+	height: 320px;
+}
+.img-item{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.img-item img{
+	width: 100%;
+	height: 100%;
+}
+.glyphicon{
+	color: #ff6969;
+	font-size: 35px;
+}

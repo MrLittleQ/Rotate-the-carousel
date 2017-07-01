@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="index.js"></script>
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="J_Poster contanier" data-setting='{
+	                                               "width":800,
+       	                                           "height":320,
+       	                                           "posterWidth":480,
+       	                                           "posterHeight":320,
+       	                                           "scale":0.9,
+                                                   "speed":500,
+                                                    "autoPlay":true,
+                                                    "delay":2000,
+                                                    "verticalAlign":"mid"
+       	                                           }'>
+		<div class="btn prev-btn"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div>
+        <ul class="img-list">
+        	<li class="img-item"><a href="#"><img src="img/1.jpg" alt=""></a></li>
+        	<li class="img-item"><a href="#"><img src="img/2.jpg" alt=""></a></li>
+        	<li class="img-item"><a href="#"><img src="img/3.jpg" alt=""></a></li>
+        	<li class="img-item"><a href="#"><img src="img/4.jpg" alt=""></a></li>
+        	<li class="img-item"><a href="#"><img src="img/5.jpg" alt=""></a></li>
+          <li class="img-item"><a href="#"><img src="img/2.jpg" alt=""></a></li>
+          <li class="img-item"><a href="#"><img src="img/3.jpg" alt=""></a></li>
+          <li class="img-item"><a href="#"><img src="img/4.jpg" alt=""></a></li>
+          <li class="img-item"><a href="#"><img src="img/5.jpg" alt=""></a></li>
+        </ul>
+		<div class="btn next-btn"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+	</div>
+</body>
+<script>
+	$(function(){
+       //Carousel
+       // var carousel=new Carousel($(".J_Poster").eq(0));
+       var setting;
+       Carousel.init($(".J_Poster"),setting);
+	});
+</script>
+</html>
